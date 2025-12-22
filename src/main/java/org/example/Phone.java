@@ -1,8 +1,11 @@
 package org.example;
 
-public class Phone extends Manufacture implements Computer {
-    public Phone(String model, String brand, String manufacturer) {
-        super(model, brand, manufacturer);
+public class Phone implements Computer {
+    private Manufacture manufacture;
+
+    public Phone(Manufacture manufacture) {
+        this.manufacture = manufacture;
+
     }
 
     public void boot() {
