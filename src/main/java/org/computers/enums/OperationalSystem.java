@@ -1,4 +1,4 @@
-package org.example.enums;
+package org.computers.enums;
 
 public enum OperationalSystem {
     ANDROID,

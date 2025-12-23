@@ -1,4 +1,4 @@
-package org.example;
+package org.computers.data;
 
 public class Manufacture {
     private String country;

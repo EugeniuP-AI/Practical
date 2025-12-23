@@ -1,9 +1,9 @@
-package org.example;
+package org.computers.data;
 
-import org.example.enums.OperationalSystem;
-import org.example.interfaces.Computer;
+import org.computers.enums.OperationalSystem;
+import org.computers.interfaces.Bootable;
 
-public class Laptop implements Computer {
+public class Laptop implements Bootable {
     private String laptopModel;
     private int ramSize;
     private double processorSpeed;

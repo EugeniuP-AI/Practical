@@ -1,6 +1,6 @@
-package org.example;
+package org.computers.data;
 
-import org.example.enums.OperationalSystem;
+import org.computers.enums.OperationalSystem;
 
 public class Main {
 
