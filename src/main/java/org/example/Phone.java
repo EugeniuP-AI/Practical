@@ -1,14 +1,17 @@
 package org.example;
 
+import org.example.enums.OperationalSystem;
+import org.example.interfaces.Computer;
+
 public class Phone implements Computer {
-    private String operatingSystem;
     private String model;
     private int ram;
     private int batteryCapacity;
     private Manufacture manufacture;
+    private OperationalSystem operationalSystem;
 
-    public Phone(Manufacture manufacture, String operatingSystem, String model, int ram, int batteryCapacity) {
-        this.operatingSystem = operatingSystem;
+    public Phone(Manufacture manufacture, OperationalSystem operationalSystem, String model, int ram, int batteryCapacity) {
+        this.operationalSystem = operationalSystem;
         this.model = model;
         this.ram = ram;
         this.batteryCapacity = batteryCapacity;
@@ -26,7 +29,7 @@ public class Phone implements Computer {
     @Override
     public String toString() {
         return "Phone{" +
-                "operatingSystem='" + operatingSystem + '\'' +
+                "operatingSystem='" + operationalSystem + '\'' +
                 ", model='" + model + '\'' +
                 ", ram=" + ram +
                 ", batteryCapacity=" + batteryCapacity +

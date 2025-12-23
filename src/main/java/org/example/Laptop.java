@@ -1,16 +1,21 @@
 package org.example;
 
+import org.example.enums.OperationalSystem;
+import org.example.interfaces.Computer;
+
 public class Laptop implements Computer {
     private String laptopModel;
     private int ramSize;
     private double processorSpeed;
     private Manufacture manufacturer;
+    private OperationalSystem operatingSystem;
 
-    public Laptop(Manufacture manufacturer,String laptopModel, int ramSize, double processorSpeed) {
+    public Laptop(Manufacture manufacturer,OperationalSystem operationalSystem,String laptopModel, int ramSize, double processorSpeed) {
         this.manufacturer = manufacturer;
         this.laptopModel = laptopModel;
         this.ramSize = ramSize;
         this.processorSpeed = processorSpeed;
+        this.operatingSystem = operationalSystem;
     }
 
     public void boot() {
@@ -25,6 +30,7 @@ public class Laptop implements Computer {
     public String toString() {
         return "Laptop{" +
                 "laptopModel='" + laptopModel + '\'' +
+                ", operatingSystem=" + operatingSystem +
                 ", ramSize=" + ramSize +
                 ", processorSpeed=" + processorSpeed +
                 ", manufacturer=" + manufacturer +
