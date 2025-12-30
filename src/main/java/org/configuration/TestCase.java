@@ -3,6 +3,7 @@ package org.configuration;
 import org.configuration.helper.CpeHelper;
 import org.configuration.helper.DpsHelper;
 import org.configuration.helper.MgHelper;
+import org.configuration.interfaces.Configuration;
 import org.configuration.interfaces.Retrievable;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class TestCase {
 //        System.out.println(mgHelper.getConfiguration());
         List<Retrievable> retrievables = List.of(cpeHelper, dpsHelper, mgHelper);
         for (Retrievable retrievable : retrievables) {
-            System.out.println(retrievable.getConfiguration());
+            Configuration configuration = retrievable.getConfiguration();
         }
     }
 }

@@ -1,11 +1,14 @@
 package org.bank;
 
 import org.bank.data.AtmState;
+import org.bank.services.AtmService;
 
 import java.util.Scanner;
 
 public class AtmApplication {
     public static void main(String[] args) {
+        AtmService atmService = new AtmService();
+        atmService.withdraw();
 
         int storedPin = 1234;
         double accountBalance = 2500.00;
